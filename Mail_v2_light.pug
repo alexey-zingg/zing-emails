@@ -1,0 +1,20 @@
+extend light-layout
+block templatePreheader 
+  span “I need help with my merchant account” was created by Stanislav Soia
+block templateHeader
+  img(src="./assets/z-header.png", alt="zing.gg logo")
+block contentHeader
+  td(align="center" valign="top").header-center.h1 Dear stan@zing.gg!
+block contentBody
+  tr: td(align="center" valign="top" colspan=2).subheader.h1 “I need help with my merchant account” was created by Stanislav Soia
+  tr: td(align="center" valign="top" colspan=2)
+    table.textmessage(border="0" cellpadding="16" cellspacing="0" width="100%")
+      tr: td(align="left" valign="top") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae elit et nunc convallis euismod eu eget purus. Pellentesque efficitur massa sollicitudin porta pretium. Donec vulputate nec felis ut lacinia. Sed sed pulvinar risus. Nam suscipit id tortor in semper. 
+  tr
+    td(align="right" valign="top").ctablock: a(href="").dark Button no
+    td(align="left" valign="top").ctablock: a(href="").light Button yes
+  tr: td(align="center" valign="top" colspan=2)#notify
+    table(border="0" cellpadding="4" cellspacing="0")
+      tr
+        td(align="left" valign="middle"): img(src="./assets/notifications_off.svg", alt="")
+        td(align="left" valign="middle"): a(href="") Turn off this tickets notifications

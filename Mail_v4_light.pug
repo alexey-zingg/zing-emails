@@ -1,0 +1,28 @@
+extend light-layout
+block templatePreheader 
+  span New ticket
+block templateHeader
+  img(src="./assets/z-header.png", alt="zing.gg logo")
+block contentHeader
+  td(align="center" valign="top").header-center.h1 Dear stan@zing.gg!
+block contentBody
+  tr: td(align="center" valign="top").subheader.h1 New ticket
+  tr: td(align="center" valign="top")
+    table.newticket(border="0" cellpadding="0" cellspacing="0" width="100%")
+      tr: td(align="left" valign="top" colspan-2).newticket-title Name new ticket
+      tr: td(align="left" valign="top" colspan-2).newticket-meta Has been created by William Atkins
+      tr: td(align="left" valign="top" colspan-2).newticket-meta Assigned to William Atkins
+      tr: td(align="left" valign="top" colspan-2).newticket-meta ID: #11
+      tr
+        td(align="left" valign="top").newticket-meta Status
+        td(align="right" valign="top").newticket-status: span.status(style="color:#ffffff;background-color:#3f7bda") Status
+  tr: td(align="center" valign="top")
+    table.textmessage(border="0" cellpadding="16" cellspacing="0" width="100%")
+      tr: td(align="left" valign="top" style="color:#707785;padding-bottom:8px") Description:
+      tr: td(align="left" valign="top" style="padding-top:0") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae elit et nunc convallis euismod eu eget purus. Pellentesque efficitur massa sollicitudin porta pretium. Donec vulputate nec felis ut lacinia. Sed sed pulvinar risus. Nam suscipit id tortor in semper. 
+  tr: td(align="center" valign="top").ctablock: a(href="").light See the full ticket
+  tr: td(align="center" valign="top")#notify
+    table(border="0" cellpadding="4" cellspacing="0")
+      tr
+        td(align="left" valign="middle"): img(src="./assets/notifications_off.svg", alt="")
+        td(align="left" valign="middle"): a(href="") Turn off this tickets notifications

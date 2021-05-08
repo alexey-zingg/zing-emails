@@ -4,6 +4,7 @@ $bg: #fafbfd;
 $text: #25282c;
 $darkBlue: #183c75;
 $lightBlue: #3f7bda;
+$light: #707785;
 
 /* Client-specific Styles */
 #outlook a {
@@ -73,13 +74,13 @@ h1,
   border-radius: 8px;
 }
 
-#templateHeader {
+#contentHeader {
   font-family: $fontFamily;
   border-bottom: 1px solid #f1f4f8;
   margin-bottom: 16px;
 }
 
-#templateBody {
+#contentBody {
   font-family: $fontFamily;
   border-bottom: 1px solid #f1f4f8;
   margin-bottom: 16px;
@@ -106,8 +107,7 @@ h1,
 }
 
 .ctablock {
-  padding: 16px 16px 32px;
-  text-align: center;
+  padding: 16px 8px 32px;
 }
 
 .ctablock a {
@@ -122,7 +122,13 @@ h1,
   text-decoration: none;
   border-radius: 28px;
   color: #ffffff;
-  background-color: $lightBlue;
+
+  &.light {
+    background-color: $lightBlue;
+  }
+  &.dark {
+    background-color: $darkBlue;
+  }
 }
 
 .footer-terms {
@@ -138,4 +144,58 @@ h1,
 
 .footer-social {
   padding: 0 0 16px;
+}
+
+.textmessage {
+  border-radius: 8px;
+  background-color: $bg;
+  font-family: $fontFamily;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+
+.newticket {
+  border-left: 3px solid $lightBlue;
+  background-color: $bg;
+  font-family: $fontFamily;
+  font-size: 13px;
+  line-height: 20px;
+  margin-bottom: 16px;
+  padding: 16px;
+
+  &-title {
+    font-family: $fontFamily;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 4px;
+  }
+  &-meta {
+    font-family: $fontFamily;
+    font-size: 13px;
+    line-height: 1.4;
+    color: $light;
+  }
+}
+
+#notify {
+  border-top: 1px solid #f1f4f8;
+  padding: 16px;
+
+  a {
+    font-family: $fontFamily;
+    font-size: 13px;
+    line-height: 20px;
+    color: $lightBlue;
+    text-decoration: none;
+  }
+}
+
+.status {
+  font-family: $fontFamily;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 4px 8px;
+  border-radius: 12px;
 }
