@@ -1,0 +1,96 @@
+extend order-layout
+block contentBody
+  table#subheaderTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td
+      table.infoTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+        tr: th Reference:
+        tr: td 3548885 /Zuid-152
+      table.infoTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+        tr: th Description:
+        tr: td Demo order description, Paument of GBR 425,card details not saved.
+  table#orderTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td.h2(colspan='2') Here are the details of your payment and automatic payments profile with BizCase Name
+    tr: td.h3(colspan='2') About This Payment
+    tr
+      td: span.orderLabel Payment ID:
+      td(align='right'): span.orderVal 8CQR-TR43-FF3R-65GR
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Payment date:
+      td(align='right'): span.orderVal April 8 2020
+    tr
+      td: span.orderLabel Payment amount:
+      td(align='right'): span.orderVal GBP 39.95
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel You paid with:
+      td(align='right'): span.orderVal VISA-XXXX-XXXX-4321
+    tr: td.h6(colspan='2') This charge will appear on your billing statement as: <a href="#">BizCase Descriptor</a>
+  table#orderTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td.h3(colspan='2') About your Next Payment
+    tr
+      td: span.orderLabel Next payment due:
+      td(align='right'): span.orderVal May 8, 2020
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Next payment amount:
+      td(align='right'): span.orderVal GBP 39.95
+  table#orderTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td.h3(colspan='2') Your Automatic Payments Profile
+    tr
+      td: span.orderLabel Your profile ID:
+      td(align='right'): span.orderVal ScheduleID
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Payments From:
+      td(align='right'): span.orderVal Customer Name
+    tr
+      td: span.orderLabel Payments To:
+      td(align='right'): span.orderVal BizCase Name, City, Country<br>support@merchantname.com
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Payments For:
+      td(align='right'): span.orderVal Product Description
+    tr
+      td: span.orderLabel Each Payment:
+      td(align='right'): span.orderVal GBP 39.95
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Billing cycle:
+      td(align='right'): span.orderVal Monthly
+    tr
+      td: span.orderLabel Initial Payment:
+      td(align='right'): span.orderVal April 8, 2020
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Schedule Starts:
+      td(align='right'): span.orderVal May 8, 2020
+    tr
+      td: span.orderLabel Payment Cycles:
+      td(align='right'): span.orderVal Good Until Cancelled
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Charged to:
+      td(align='right'): span.orderVal VISA-XXXX-XXXX-4321
+  table#orderTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td.separateHeader(colspan='2')
+      h2 Questions?
+      p Contact the BizCase Name Customer service team.
+    tr: td.h3(colspan='2') BizCase Customer Service
+    tr
+      td: span.orderLabel Merchant Website:
+      td(align='right'): a(href="").orderVal www.merchantwebsite.com
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Customer Support Email:
+      td(align='right'): a(href="").orderVal support@merchantwebsite.com
+    tr
+      td: span.orderLabel Customer Support Phone:
+      td(align='right'): span.orderVal +44 (0)800 444 4444
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Service Address:
+      td(align='right'): span.orderVal 1234 Wellington Arch<br>London EF12 3EG<br>United Kingdom
+    tr
+      td: span.orderLabel Registered Name:
+      td(align='right'): span.orderVal ABC Mattresses Limited
+    tr(style='background-color:#F9F9FB')
+      td: span.orderLabel Registration Number:
+      td(align='right'): span.orderVal 11798117
+    tr
+      td: span.orderLabel Registered Country:
+      td(align='right'): span.orderVal England & Wales
+  table#ctaTable(border="0" cellpadding="0" cellspacing="0" width="100%")
+    tr: td.h2 Want to make a Change?
+    tr: td.text To make changes to your automatic payment profile or cancel your pre-approval with [BizCase Name] just click here or contact us at the details directly above.
+    tr: td: a(href="").btn-cta Make a Change
